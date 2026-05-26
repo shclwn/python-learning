@@ -1,45 +1,45 @@
-# Запрашиваем число
+# Задание 1: чётное или нечётное
 number = int(input("Введите число: "))
-
-# Проверяем, чётное ли оно
 if number % 2 == 0:
     print("чётное")
 else:
     print("нечётное")
 
-age = int(input("Введите ваш возраст: "))
+# Задание 2: проверка возраста
+age = int(input("Введите возраст: "))
 if age < 18:
     print("Доступ запрещён")
 else:
     print("Добро пожаловать!")
 
-number1 = int(input("Введите первое число: "))
-number2 = int(input("Введите второе число: "))
-if number1 > number2:
-    print("Наибольшее число:", number1)
-elif number1 < number2:
-    print("Наибольшее число:", number2)
+# Задание 3: максимум из двух
+num1 = int(input("Первое число: "))
+num2 = int(input("Второе число: "))
+if num1 > num2:
+    print("Наибольшее:", num1)
+elif num1 < num2:
+    print("Наибольшее:", num2)
 else:
     print("Числа равны")
 
-a = float(input("Введите первое число: "))
-b = float(input("Введите второе число: "))
-op = input("Введите операцию (+, -, *, /): ")
-
+# Задание 4: калькулятор
+a = float(input("Число 1: "))
+b = float(input("Число 2: "))
+op = input("Операция (+, -, *, /): ")
 if op == "+":
-    print("Результат:", a + b)
+    print(a + b)
 elif op == "-":
-    print("Результат:", a - b)
+    print(a - b)
 elif op == "*":
-    print("Результат:", a * b)
+    print(a * b)
 elif op == "/":
-    print("Результат:", a / b)
+    print(a / b)
 else:
-    print("Ошибка: неизвестная операция")
+    print("Неизвестная операция")
 
-year = int(input("Введите год: "))
-
+# Задание 5: високосный год
+year = int(input("Год: "))
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print("Год високосный")
+    print("Високосный")
 else:
-    print("Год не високосный")
+    print("Не високосный")
